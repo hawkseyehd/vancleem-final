@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font-Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Bootstrap CDN -->
+
+    <!-- jquery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+     <!-- Jquery CDN -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <title>Vancleem</title>
+  </head>
+  <body>
+    <!-- Main Header-->
+    <header class="main-header">
+      <div class="container d-flex align-items-center justify-content-between">
+       <a href="#home"> <div class="logo text-uppercase"><span>GRANT</span> VAN CLEEMPUT</div></a>
+        <div class="mobile-nav-btn">
+          <span class="mobile-nav-btn__burger"></span>
+        </div>
+        <nav class="mobile-nav align-items-start justify-content-center">
+          <ul
+            class="mobile-nav__list d-flex flex-column align-items-center flex-wrap justify-content-start"
+          >
+            <li class="mobile-nav__list__item"><a href="#home">Home</a></li>
+            <li class="mobile-nav__list__item">
+              <a href="#solutions">Solutions</a>
+            </li>
+            <li class="mobile-nav__list__item">
+              <a href="#skills">Skills</a>
+            </li>
+            <li class="mobile-nav__list__item">
+              <a href="#usecases">Use Cases</a>
+            </li>
+            <li class="mobile-nav__list__item">
+              <a href="#contact">Contact</a>
+            </li>
+            <li class="mobile-nav__list__item">
+              <a href="./blog-pages/blog-list.html">Blog</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="main-nav d-flex align-items-center">
+          <ul class="main-nav__list d-flex align-items-center flex-wrap">
+            <li class="main-nav__list__item"><a href="#home">Home</a></li>
+            <li class="main-nav__list__item">
+              <a href="#solutions">Solutions</a>
+            </li>
+            <li class="main-nav__list__item">
+              <a href="#skills">Skills</a>
+            </li>
+            <li class="main-nav__list__item">
+              <a href="#usecases">Use Cases</a>
+            </li>
+            <li class="main-nav__list__item"><a href="#contact">Contact</a></li>
+            <li class="main-nav__list__item">
+              <a href="./blog-pages/blog-list.html">Blog</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Chat-bot -->
+      <!-- Chat-bot Floating-button -->
+      <div class="chatbot-parent">
+        <div class="chatbot">
+          <div class="chatbot-image">
+            <div class="chatbot-online_status"></div>
+          </div>
+          <div class="chatbot-texts">
+            <h1>Xenia</h1>
+            <h2>AI Assistant</h2>
+          </div>
+          <div class="chatbot-cut_icon">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+        </div>
+      </div>
+      <!-- Chatbot Pop-up Window -->
+      <div class="chatbot-modal container d-flex flex-column align-items-center position-fixed d-none">
+
+        <div id="app">
+          <div id="chat_container"></div>
+          <form>
+            <textarea
+              name="prompt"
+              cols="1"
+              rows="1"
+              placeholder="Ask Codex..."
+            ></textarea>
+            <button type="submit"><img src="assets/send.svg" /></button>
+          </form>
+        </div>
+    
+
+      </div>      
+      <!-- Section 1 -->
+      <section class="section-home" id="home">
+        <div
+          class="container d-flex align-items-center justify-content-between pt-5"
+        >
+          <div class="section-home__left col-6">
+            <h2>PM / BA / DEV</h2>
+            <h1 class="section-home__left__heading section-heading1">
+              Simplifying Complex <br />
+              Data Challenges
+            </h1>
+            <p class="section-home__left__para">
+              Streamline your data processes and save time and resources with
+              custom automation solutions. From data acquisition and cleaning to
+              transformation and analysis, let me take the hassle out of working
+              with data so you can focus on what matters most to your business.
+            </p>
+            <div class="section-home__left__buttons d-flex align-items-center">
+              <a
+                href="#contact"
+                class="section-home__left__contact-btn primary-button"
+              >
+                Contact
+              </a>
+              <button
+                class="section-home__left__linkedin-btn primary-button mx-4"
+              >
+                LinkedIn
+              </button>
+            </div>
+          </div>
+          <div class="section-home__right col-6">
+            <div class="section-home__right__img">
+              <img class="img-fluid" src="./images/synapse-1 1.webp" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tags -->
+
+      <div class="tools text-center my-5 d-flex flex-wrap mx-auto">
+        <span class="tools-tag">Python</span>
+        <span class="tools-tag">PowerShell</span>
+        <span class="tools-tag">VBA</span>
+        <span class="tools-tag">SQL</span>
+        <span class="tools-tag">Power Query</span>
+        <span class="tools-tag">Power BI</span>
+        <span class="tools-tag">Power Apps</span>
+        <span class="tools-tag">Power Automate</span>
+        <span class="tools-tag">...</span>
+      </div>
+
+      <!-- Section 2 -->
+      <section class="section-solutions" id="solutions">
+        <div class="container">
+          <div class="overlay-elipse1"></div>
+          <div class="overlay-elipse2"></div>
+          <h1 class="section-solutions__heading1 section-title">SOLUTIONS</h1>
+          <h2 class="section-solutions__heading2 section-heading">
+            Analytics and Automation as a Cornerstone of your Business Strategy.
+          </h2>
+          <p class="section-solutions__para">
+            Analytics and automation are the cornerstone of any successful
+            business strategy. Our solutions can help you unlock the full
+            potential of your data, providing you with the insights and
+            automation you need to make better informed decisions, streamline
+            your processes, and drive better business outcomes. Whether you need
+            help with data transformation and cleaning, dashboards and reports,
+            machine learning, or any other data-related task, we have the tools
+            and expertise to help you succeed.
+          </p>
+          <div
+            class="section-solutions__cards d-flex align-items-center justify-content-between flex-wrap"
+          >
+            <div class="section-solutions__card card">
+              <span class="bar1"></span>
+              <h2 class="section-solutions__card__title card-title">
+                Custom Pricing Solutions
+              </h2>
+              <p class="section-solutions__card__description card-description">
+                Are you struggling to find the right pricing strategy for your
+                products or services? Custom pricing solutions can help you
+                identify the optimal prices for your offerings, taking into
+                account factors like costs, competition, and market demand. This
+                can help you drive sales and maximize your revenue and
+                profitability.
+              </p>
+            </div>
+            <div class="section-solutions__card card">
+              <span class="bar2"></span>
+              <h2 class="section-solutions__card__title card-title">
+                Yield Management Systems
+              </h2>
+              <p class="section-solutions__card__description card-description">
+                Are you looking for ways to optimize your inventory and pricing
+                to maximize revenue and profitability? Yield management systems
+                can help you make real-time adjustments to pricing and inventory
+                levels, ensuring that you get the most value from your assets.
+              </p>
+            </div>
+            <div class="section-solutions__card card">
+              <span class="bar3"></span>
+              <h2 class="section-solutions__card__title card-title">
+                Financial Reporting Automation
+              </h2>
+              <p class="section-solutions__card__description card-description">
+                Are your teams tired of spending hours on manual financial
+                reporting tasks? Financial reporting automation solutions can
+                handle large volumes of data and complex calculations, freeing
+                up time to focus on more strategic tasks.
+              </p>
+            </div>
+            <div class="section-solutions__card card">
+              <span class="bar1"></span>
+              <h2 class="section-solutions__card__title card-title">
+                Dashboards & Reports
+              </h2>
+              <p class="section-solutions__card__description card-description">
+                Do you need a better way to understand and communicate key
+                metrics and trends to stakeholders? Custom dashboards and
+                reports can help you visualize your data in a way that is
+                visually appealing and easy to understand.
+              </p>
+            </div>
+            <div class="section-solutions__card card">
+              <span class="bar2"></span>
+              <h2 class="section-solutions__card__title card-title">
+                Data Preparation & Cleaning
+              </h2>
+              <p class="section-solutions__card__description card-description">
+                Are you struggling to make sense of large or complex data sets?
+                Data transformation and cleaning solutions can help you prepare
+                your data for analysis, ensuring that you have accurate, clean
+                data to work with. This can help you save time and avoid costly
+                mistakes.
+              </p>
+            </div>
+            <div class="section-solutions__card card">
+              <span class="bar3"></span>
+              <h2 class="section-solutions__card__title card-title">
+                Data Mining & Analysis
+              </h2>
+              <p class="section-solutions__card__description card-description">
+                Do you want to extract more value from your data? Data mining
+                and analysis solutions can help you uncover hidden insights and
+                trends, allowing you to make more informed decisions and drive
+                better business outcomes.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Section 3-->
+      <section class="section-skills" id="skills">
+        <div class="section-skills__backdrop"></div>
+        <div
+          class="container d-flex justify-content-between"
+        >
+        <div class="overlay-elipse3"></div>
+          <div class="section-skills__left col-6">
+            <div class="section-skills__left__heading1 section-title">
+              SKILLS
+            </div>
+            <div class="section-skills__left__heading2 section-heading">
+              Unlock Powerful Insights and Streamline Data Processes.
+            </div>
+            <img class="img-fluid section-skills__left__screen-img" src="./images/screen-2.webp" alt="screen 2" />
+          </div>
+          <div class="section-skills__right col-6 d-flex flex-column">
+            <div
+              class="section-skills__right skill d-flex justify-content-between"
+            >
+              <span class="bar4"></span>
+              <h2 class="skill-title my-2">Business Acumen</h2>
+              <p class="skill-description w-50">
+                Understand the needs of the business and how to apply technical
+                solutions in a way that drives value and achieves desired
+                outcomes.
+              </p>
+            </div>
+            <div
+              class="section-skills__right skill d-flex justify-content-between"
+            >
+              <span class="bar4"></span>
+              <h2 class="skill-title my-2">Problem Solving</h2>
+              <p class="skill-description w-50">
+                Identify and resolve issues that arise during the course of a
+                project, using a combination of technical expertise and creative
+                thinking.
+              </p>
+            </div>
+            <div
+              class="section-skills__right skill d-flex justify-content-between"
+            >
+              <span class="bar4"></span>
+              <h2 class="skill-title my-2">Coordination</h2>
+              <p class="skill-description w-50">
+                Manage cross-functional teams and stakeholders effectively,
+                ensuring that all team members are aligned and working towards
+                the same goals.
+              </p>
+            </div>
+            <div
+              class="section-skills__right skill d-flex justify-content-between"
+            >
+              <span class="bar4"></span>
+              <h2 class="skill-title my-2">Documentation</h2>
+              <p class="skill-description w-50">
+                Proper documentation is key to the success of any project,
+                helping to ensure that solutions can be clearly understood and
+                maintained over time.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 4-->
+      <section class="section-use-cases" id="usecases">
+        <div class="container">
+          <h1 class="section-use-cases__heading1 section-title">USE CASES</h1>
+          <h2 class="section-use-cases__heading2 section-heading">
+            Experience Developing Effective Solutions.
+          </h2>
+          <p class="section-use-cases__description">
+            Discover the value of your data with custom solutions. From
+            automating financial reporting and building dashboards to developing
+            custom pricing models and yield management systems, I have the
+            skills and experience to assist you in extracting insights and
+            driving better business outcomes.
+          </p>
+          <div
+            class="section-use-cases__cards d-flex flex-wrap align-items-center justify-content-between"
+          >
+            <div class="section-use-cases__card card">
+              <img
+                src="./images/image4.webp"
+                alt="card img"
+                class="section-use-cases__card__img img-fluid"
+              />
+              <div class="section-use-cases__card-body">
+                <h3 class="section-use-cases__card__subtitle card-subtitle">
+                  BNP PARIBAS - CORPORATE INVETMENT BANK
+                </h3>
+                <h2 class="section-use-cases__card__title card-title">
+                  Accounting & Finance
+                </h2>
+                <p class="section-use-cases__card__description">
+                  Developed data automation and analytics tools for the finance
+                  department, including a Python framework for automating
+                  financial data transformation and a Power BI dashboard for
+                  monitoring finance activities. As a result, we were able to
+                  reduce operational risk and save time and resources. Used
+                  Atlassian Confluence and Jira for project documentation and
+                  management, and helped financial analysts solve technical data
+                  preparation problems.
+                </p>
+              </div>
+            </div>
+            <div class="section-use-cases__card card">
+              <img
+                src="./images/image2.webp"
+                alt="card img"
+                class="section-use-cases__card__img img-fluid"
+              />
+              <div class="section-use-cases__card-body">
+                <h3 class="section-use-cases__card__subtitle card-subtitle">
+                  PRATT & WHITNEY CANADA - AEROSPACE
+                </h3>
+                <h2 class="section-use-cases__card__title card-title">
+                  Aftermarket Sales
+                </h2>
+                <p class="section-use-cases__card__description">
+                  Developed data and analytics reporting tools using Microsoft
+                  Access, Power BI, and Python, establishing metrics and KPIs to
+                  track performance and trends. Connected to various data
+                  sources and performed data mining, modeling, preparation, and
+                  analysis using Python and Excel Power Query. Also developed
+                  Microsoft Power BI dashboards and Access applications using M,
+                  DAX, VBA, and SQL, as well as an intranet website using HTML,
+                  CSS, and JavaScript.
+                </p>
+              </div>
+            </div>
+            <div class="section-use-cases__card card">
+              <img
+                src="./images/image5.webp"
+                alt="card img"
+                class="section-use-cases__card__img img-fluid"
+              />
+              <div class="section-use-cases__card-body">
+                <h3 class="section-use-cases__card__subtitle card-subtitle">
+                  HERTZ ANTILLES-GUYANE - CAR RENTAL
+                </h3>
+                <h2 class="section-use-cases__card__title card-title">
+                  Yield & Revenue Management
+                </h2>
+                <p class="section-use-cases__card__description">
+                  Focused on business intelligence and analytics, developing a
+                  revenue management application in Microsoft Access and Power
+                  BI dashboards to forecast and optimize fleet utilization. Also
+                  automated yield management using Excel VBA and defined
+                  technical requirements for ERP customization projects to
+                  improve data integration. In addition, you led the development
+                  of car rental e-commerce websites and rationalized pricing and
+                  vehicle groups,
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 5-->
+      <section class="section-contact" id="contact">
+        <div class="section-contact__backdrop"></div>
+        <div
+          class="container d-flex align-items-center justify-content-between"
+        >
+          <div class="section-contact__left col-6">
+            <h2 class="section-contact__left__contact-title">
+              <span>GRANT</span> VAN CLEEMPUT
+            </h2>
+            <h2 class="section-contact__left__heading2 section-heading1">
+              Analytics & Data Automation Consultant
+            </h2>
+            <p class="section-contact__left__description">
+              Thank you for visiting my website. If you have any questions or would like to discuss your data-related needs, please don't hesitate to get in touch. I would be happy to discuss your specific requirements in more detail. I look forward to hearing from you and helping you unlock the full potential of your data.
+            </p>
+            <div class="section-contact__left__contact-phone">
+              <span>Mobile:
+              </span>
+              <span> 514-978-9422 </span>
+            </div>
+            <div class="section-contact__left__contact-location">
+              <span>Location: </span>
+              <span> Montreal, Canada </span>
+            </div>
+            <div class="section-contact__left__contact-email">
+              <span>Email: </span>
+              </span>
+              <span> grant@vancleem.com </span>
+            </div>
+            <div class="section-contact__left__contact-linkedin">
+              <span>LinkedIn: </span>
+              </span>
+              <a href="https://www.linkedin.com/in/vancleem" target="_blank">vancleem </a>
+            </div>
+          </div>
+          <div class="section-contact__right col-5">
+            <form class="contact-form">
+              <div>
+                <input
+                  class="form-control"
+                  type="text"
+                  placeholder="Name"
+                />
+              </div>
+              <div>
+                <input
+                  class="form-control"
+                  type="email"
+                  placeholder="Email Address"
+                />
+              </div>
+              <div>
+                <input
+                  class="form-control"
+                  type="tel"
+                  placeholder="Phone Number"
+                />
+              </div>
+              <div>
+                <textarea
+                  class="form-control"
+                  name="message"
+                  id="message"
+                  cols="30"
+                  rows="10"
+                  placeholder="Message"
+                ></textarea>
+              </div>
+               <div class="contact-form-btn-container d-flex align-items-center justify-content-between">
+                <button class="primary-button contact-form-btn">Send</button>
+                <span class="contact-form__submit-text d-none">Thank you. Your message was sent.</span>
+               </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container d-flex align-items-center justify-content-center">
+        <p class="copy-right-text">
+          vancleem.com <span class="copy-right-year"></span> - All rights
+          reserved. 
+          <a href="#">Terms & Confidentiality.</a>
+        </p>
+      </div>
+    </footer>
+
+    <script src="./scripts/script.js" defer></script>
+    <script src="./scripts/home.js"></script>
+    <script src="./scripts/bot-script.js"></script>
+  </body>
+</html>

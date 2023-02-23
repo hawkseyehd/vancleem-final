@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <!-- Font-Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./../css/main.css" />
+    <link rel="stylesheet" href="./../css/blog-details.css" />
+    <title>Vancleem</title>
+  </head>  <body>
+    <header class="main-header">
+      <div class="container d-flex align-items-center justify-content-between">
+        <a href="../index.html#home"> <div class="logo text-uppercase"><span>GRANT</span> VAN CLEEMPUT</div></a>
+        <div class="mobile-nav-btn">
+          <span class="mobile-nav-btn__burger"></span>
+        </div>
+        <nav class="mobile-nav align-items-start justify-content-center">
+          <ul
+            class="mobile-nav__list d-flex flex-column align-items-center flex-wrap justify-content-start"
+          >
+            <li class="mobile-nav__list__item"><a href="../index.html#home">Home</a></li>
+            <li class="mobile-nav__list__item">
+              <a href="../index.html#solutions">Solutions</a>
+            </li>
+            <li class="mobile-nav__list__item">
+              <a href="../index.html#skills">Skills</a>
+            </li>
+            <li class="mobile-nav__list__item">
+              <a href="../index.html#usecases">Use Cases</a>
+            </li>
+            <li class="mobile-nav__list__item">
+              <a href="./blog-list.html">Blog</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="main-nav d-flex align-items-center">
+          <ul class="main-nav__list d-flex align-items-center flex-wrap">
+            <li class="main-nav__list__item"><a href="../index.html">Home</a></li>
+            <li class="main-nav__list__item">
+              <a href="../index.html#solutions">Solutions</a>
+            </li>
+            <li class="main-nav__list__item">
+              <a href="../index.html#skills">Skills</a>
+            </li>
+            <li class="main-nav__list__item">
+              <a href="../index.html#usecases">Use Cases</a>
+            </li>
+            <li class="main-nav__list__item">
+              <a href="./blog-list.html">Blog</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <!-- Chat-bot -->
+      <!-- Chat-bot Floating-button -->
+      <div class="chatbot-parent">
+        <div class="chatbot">
+          <div class="chatbot-image">
+            <div class="chatbot-online_status"></div>
+          </div>
+          <div class="chatbot-texts">
+            <h1>Xenia</h1>
+            <h2>AI Assistant</h2>
+          </div>
+          <div class="chatbot-cut_icon">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+        </div>
+      </div>
+      <!-- Chatbot Pop-up Window -->
+      <div class="chatbot-modal container d-flex flex-column align-items-center position-fixed d-none">
+
+        <div class="section-4_chatbot" id="chat-bot-chat">
+          <div class="section-4_blur-circle"></div>
+          <div class="section-4_chatbot__head">
+            <div class="chatbot-image">
+              <div class="chatbot-online_status"></div>
+            </div>
+            <div class="chatbot-texts">
+              <h1>Xenia</h1>
+              <h2>AI Assistant</h2>
+            </div>
+          </div>
+          <div class="chat-paragraphes">
+            <div class="prompt">
+              Welcome! I'm an AI-powered assistant designed to answer
+              questions about analytics and data automation in a way that
+              reflects Grant's expertise and approach. I'm here to provide
+              you with quick and informative responses.
+            </div>
+          </div>
+          <div class="chatbot-chatbox">
+            <textarea class="chat-textarea"></textarea>
+            <i class="fa-solid fa-paper-plane chat-submit"></i>
+          </div>
+        </div>
+
+      </div>     
+
+      <!-- blog-details -->
+      <section class="blog-details">
+        <div class="container d-flex justify-content-between">
+          <article class="left blog-post">
+            <div class="blog-post_blur-circle"></div>
+            <p class="blog-date">2023-02-08</p>
+            <h1 class="blog-title">
+              Get insights into analytics and automation projects
+            </h1>
+            <p class="blog-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+              felis sapien, condimentum ac nisi vitae, ornare viverra enim. Ut
+              sed
+            </p>
+            <img
+              class="img-fluid blog-img"
+              src="../images/image1.webp"
+              alt=""
+            />
+            <p class="blog-description2">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+              felis sapien, condimentum ac nisi vitae, ornare viverra enim. Ut
+              sed elementum massa. Phasellus vel nunc magna. Phasellus sodales
+              arcu ante, non tincidunt lectus ultrices nec. Curabitur augue
+              elit, molestie eget tincidunt id, commodo a libero. In id tempus
+              felis. Cras dui eros, condimentum sed tincidunt ut, congue vitae
+              sapien. Suspendisse egestas pellentesque interdum. Phasellus
+              euismod suscipit libero, nec ultrices felis hendrerit dignissim
+            </p>
+            <h2 class="blog-heading1">This is a h2 heading</h2>
+            <p class="blog-description2">
+              Nullam convallis purus eu dui condimentum commodo. Nam vestibulum
+              dui velit, at blandit ipsum fermentum non. Etiam erat ligula,
+              congue nec auctor eu, venenatis id quam. Proin posuere euismod
+              nulla, vel laoreet lacus lacinia ac. Maecenas imperdiet orci vitae
+              erat bibendum, et tincidunt eros sollicitudin. Phasellus ut
+              tristique dolor, quis facilisis nisi. In volutpat quam a tortor
+              scelerisque efficitur. Maecenas risus ante, varius sit amet
+              facilisis sed, tristique ac nulla. Nulla arcu diam, feugiat eu
+              mauris sit amet, molestie dapibus nulla.
+            </p>
+
+            <h3 class="blog-heading2">This is a h3 heading</h3>
+            <p class="blog-description2">
+              Nam aliquam urna odio, ac mollis lorem tristique sed. Donec mattis
+              lectus id risus viverra, eget lobortis ante luctus. Quisque diam
+              urna, tincidunt vel augue vel, posuere vulputate nibh. Vivamus
+              eget luctus quam, nec tristique quam. Donec malesuada vitae leo
+              eget auctor. Sed ultrices metus non magna consectetur, sed
+              suscipit justo interdum. Integer quam eros, mollis eu elementum
+              in, vestibulum sed eros. Cras ultricies consequat lorem ut
+              efficitur. Aliquam tellus nisl, varius sed condimentum sed,
+              aliquam a nulla. Phasellus scelerisque et nisi vel mollis.
+              Phasellus tortor tortor, facilisis vel risus ac, lacinia
+              sollicitudin mi. Aliquam non mauris sem. Sed at velit a orci
+              fringilla porttitor. Quisque tempus, lorem vel suscipit rutrum,
+              lacus magna pellentesque enim, sollicitudin facilisis est odio ut
+              massa. Nullam tempor elementum commodo. Aliquam arcu enim,
+              malesuada placerat imperdiet id, mollis non augue. Vestibulum et
+              consequat augue. Vestibulum libero velit, scelerisque vitae
+              aliquet ac, porta blandit nibh. In ut volutpat neque, nec faucibus
+              odio. Quisque vitae ipsum a elit fringilla pharetra. Donec nibh
+              orci, mattis id leo consectetur, volutpat malesuada est.
+              Suspendisse malesuada at dui vitae iaculis.
+            </p>
+            <div class="template-links">
+              <div class="powerpoint-template-link">
+                <svg width="16" height="21" viewBox="0 0 16 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16 7.41735H11.4286V0.278076H4.57143V7.41735H0L8 15.7465L16 7.41735ZM6.85714 9.79711V2.65783H9.14286V9.79711H10.48L8 12.3791L5.52 9.79711H6.85714ZM0 18.1263H16V20.506H0V18.1263Z" fill="#FAFCFD"/>
+                  </svg>
+                  
+                <span> PowerPoint Framework Template</span>
+              </div>
+              <div class="excel-template-link">
+                <svg width="16" height="21" viewBox="0 0 16 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16 7.41735H11.4286V0.278076H4.57143V7.41735H0L8 15.7465L16 7.41735ZM6.85714 9.79711V2.65783H9.14286V9.79711H10.48L8 12.3791L5.52 9.79711H6.85714ZM0 18.1263H16V20.506H0V18.1263Z" fill="#FAFCFD"/>
+                  </svg>
+                  
+                <span>Excel Workbook Template</span>
+              </div>
+            </div>
+            <div class="feedback-form__container">
+
+              <h2 class="feedback-form__title">Share your thoughts</h2>
+              <form class="feedback-form">
+                <div class="d-flex align-items-center gap1 justify-content-between feedback-form__inputs">
+                  <div>
+                    <input
+                      class="form-control"
+                      type="text"
+                      placeholder="Name"
+                    />
+                  </div>
+                  <div>
+                    <input
+                      class="form-control"
+                      type="email"
+                      placeholder="Email"
+                    />
+                  </div>
+                </div>
+                  <textarea
+                    class="form-control"
+                    name="message"
+                    id="comment"
+                    placeholder="Comment"
+                  ></textarea>
+                  <div  class="feedback-form-btn-parent d-flex align-items-center justify-content-between">
+                    <button type="submit" class="primary-button feedback-form-btn">Send</button>
+                    <span class="feedback-form__submitted-text">Thank you for your feedback !</span>
+                   </div>
+                </form>
+            </div>
+                 
+          </article>
+          <div class="right related-blogs col-3">
+            <div class="related-blogs__blur-circle"></div>
+            <h1 class="related-blogs-title">Related posts</h1>
+
+            <div class="related-blogs__cards d-flex flex-column">
+            <a href="#">
+                <div class="related-blogs__card">
+                  <img src="../images/image3.webp" alt="" class="related-posts__card__img img-fluid">
+                  <p class="related-blogs__blog-date">2023-02-08</p>
+                  <h1 class="related-blogs__card__title">This is the blog article title about Accounting & Finance</h1>
+                </div>
+            </a>
+            <a href="#">
+             
+                <div class="related-blogs__card">
+                  <img src="../images/image2.webp" alt="" class="related-posts__card__img img-fluid">
+                  <p class="related-blogs__blog-date">2023-02-08</p>
+                  <h1 class="related-blogs__card__title">This is the blog article title about Accounting & Finance</h1>
+                </div>
+              
+            </a>
+            <a href="#">
+                <div class="related-blogs__card">
+                  <img src="../images/image6.webp" alt="" class="related-posts__card__img img-fluid">
+                  <p class="related-blogs__blog-date">2023-02-08</p>
+                  <h1 class="related-blogs__card__title">This is the blog article title about Accounting & Finance</h1>
+                </div>
+              
+            </a>
+            <a href="#">
+                <div class="related-blogs__card">
+                  <img src="../images/image4.webp" alt="" class="related-posts__card__img img-fluid">
+                  <p class="related-blogs__blog-date">2023-02-08</p>
+                  <h1 class="related-blogs__card__title">This is the blog article title about Accounting & Finance</h1>
+                </div>
+            </a>
+          </div>
+          </div>
+        </div>
+      </section>
+
+      
+
+      <section class="section-contact" id="contact">
+        <div class="section-contact__backdrop"></div>
+        <div
+          class="container d-flex align-items-center justify-content-between"
+        >
+          <div class="section-contact__left col-6">
+            <h2 class="section-contact__left__contact-title">
+              <span>GRANT</span> VAN CLEEMPUT
+            </h2>
+            <h2 class="section-contact__left__heading2 section-heading1">
+              Analytics & Data Automation Consultant
+            </h2>
+            <p class="section-contact__left__description">
+              Thank you for visiting my website. If you have any questions or would like to discuss your data-related needs, please don't hesitate to get in touch. I would be happy to discuss your specific requirements in more detail. I look forward to hearing from you and helping you unlock the full potential of your data.
+            </p>
+            <div class="section-contact__left__contact-phone">
+              <span>Mobile:
+              </span>
+              <span> 514-978-9422 </span>
+            </div>
+            <div class="section-contact__left__contact-location">
+              <span>Location: </span>
+              <span> Montreal, Canada </span>
+            </div>
+            <div class="section-contact__left__contact-email">
+              <span>Email: </span>
+              </span>
+              <span> grant@vancleem.com </span>
+            </div>
+            <div class="section-contact__left__contact-linkedin">
+              <span>LinkedIn: </span>
+              </span>
+              <a href="https://www.linkedin.com/in/vancleem" target="_blank">vancleem </a>
+            </div>
+          </div>
+          <div class="section-contact__right col-5">
+            <form class="contact-form">
+              <div>
+                <input
+                  class="form-control"
+                  type="text"
+                  placeholder="Grant VAN CLEEMPUT"
+                />
+              </div>
+              <div>
+                <input
+                  class="form-control"
+                  type="email"
+                  placeholder="Email Address"
+                />
+              </div>
+              <div>
+                <input
+                  class="form-control"
+                  type="tel"
+                  placeholder="Phone Number"
+                />
+              </div>
+              <div>
+                <textarea
+                  class="form-control"
+                  name="message"
+                  id="message"
+                  cols="30"
+                  rows="10"
+                  placeholder="Message"
+                ></textarea>
+              </div>
+              <div class="d-flex align-items-center justify-content-between">
+                <button class="primary-button contact-form-btn">Send</button>
+                <span class="contact-form__submit-text d-none">Thank you. Your message was sent.</span>
+               </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container d-flex align-items-center justify-content-center">
+        <p class="copy-right-text">
+          vancleem.com <span class="copy-right-year"></span> - All rights
+          reserved. 
+          <a href="#">Terms & Confidentiality.</a>
+        </p>
+      </div>
+    </footer>
+
+    <script src="../scripts/script.js" defer></script>
+    <script src="../scripts/blogdetails.js" defer></script>
+  </body>
+</html>
