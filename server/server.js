@@ -25,6 +25,7 @@ app.get("/", async (req, res) => {
 
 app.post("/", async (req, res) => {
   try {
+    console.log('working try');
     const prompt = req.body.prompt;
 
     const response = await openai.createCompletion({
@@ -37,6 +38,7 @@ app.post("/", async (req, res) => {
       presence_penalty: 0,
     });
 
+    
     res.status(200).send({
       bot: response.data.choices[0].text,
     });
