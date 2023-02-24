@@ -485,7 +485,7 @@ body {
   top: 33px;
 }
 
-.chatbot-chatbox {
+/* .chatbot-chatbox {
   position: absolute;
   top: 300px;
   margin: 0;
@@ -510,16 +510,6 @@ body {
   padding-inline: 10px;
 }
 
-.chatbot-chatbox p {
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 36px;
-  width: 8px;
-  margin: 0;
-  margin-left: 10px;
-  color: #fafcfd;
-}
-
 .chatbot-chatbox i {
   color: #759eb6;
   font-size: 20px;
@@ -527,7 +517,7 @@ body {
   top: 8px;
   right: 14px;
   cursor: pointer;
-}
+} */
 
 #section-5 {
   margin: 0;

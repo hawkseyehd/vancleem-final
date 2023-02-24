@@ -1,26 +1,79 @@
-@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;300;400;500;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+/* 
+body {
+  background: #343541;
+} */
 
 #app {
-  width: 100vw;
-  height: 100vh;
-  background: #343541;
-
+  position: relative;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 517px;
+  height: 442px;
+  background: #121c23;
+  border: 1px solid #273d4b;
+  border-radius: 5px;
+}
+
+.chatbot-avatar-container {
+  display: flex;
   align-items: center;
-  justify-content: space-between;
+  width: 91%;
+  margin: 35px auto;
+  gap: 18px;
+}
+
+.chatbot-avatar-container h1 {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 24px;
+  letter-spacing: 0.2em;
+  color: #fafcfd;
+  margin-bottom: 5px;
+}
+
+.chatbot-avatar-container h2 {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.1em;
+  color: #759eb6;
+}
+
+.chatbot-avatar {
+  border-radius: 50%;
+  width: 77px;
+  height: 77px;
+}
+
+.chatbot-avatar img {
+  width: 100%;
+  height: auto;
 }
 
 #chat_container {
   flex: 1;
-  width: 100%;
+  width: 95%;
   height: 100%;
   overflow-y: scroll;
 
   display: flex;
   flex-direction: column;
   gap: 10px;
+  align-items: center;
 
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -29,28 +82,37 @@
   scroll-behavior: smooth;
 }
 
-/* hides scrollbar */
+/* hides scrollbar
 #chat_container::-webkit-scrollbar {
   display: none;
+} */
+
+.wrapper {
+  width: 90%;
+  padding: 15px;
+  border-radius: 5px;
 }
 
-
 .ai {
-  background: #40414f;
+  background: rgba(250, 252, 253, 0.9);
+}
+
+.user {
+  background: #a1bece;
 }
 
 .chat {
+  min-height: 16px;
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
-
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: center;
   gap: 10px;
 }
 
-.profile {
+/* .profile {
   width: 36px;
   height: 36px;
   border-radius: 5px;
@@ -60,26 +122,28 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
-.ai .profile {
+/* .ai .profile {
   background: #10a37f;
-}
+} */
 
-.profile img {
+/* .profile img {
   width: 60%;
   height: 60%;
   object-fit: contain;
-}
+} */
 
 .message {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+
+  color: #000000;
   flex: 1;
-
-  color: #dcdcdc;
-  font-size: 20px;
-
   max-width: 100%;
-  overflow-x: scroll;
 
   /*
    * white space refers to any spaces, tabs, or newline characters that are used to format the CSS code
@@ -94,20 +158,22 @@
 }
 
 /* hides scrollbar */
-.message::-webkit-scrollbar {
+/* .message::-webkit-scrollbar {
   display: none;
-}
+} */
 
 form {
-  width: 100%;
+  min-height: 35px;
+  background: rgba(62, 97, 118, 0.2);
+  border-radius: 5px;
+  width: 91%;
   max-width: 1280px;
   margin: 0 auto;
-  padding: 10px;
-  background: #40414f;
-
   display: flex;
+  padding-right: 20px;
   flex-direction: row;
   gap: 10px;
+  margin-block: 20px 30px;
 }
 
 textarea {
@@ -124,6 +190,10 @@ textarea {
   resize: none;
 }
 
+textarea::-webkit-scrollbar {
+  display: none;
+}
+
 button {
   outline: 0;
   border: 0;
@@ -132,6 +202,25 @@ button {
 }
 
 form img {
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
+}
+
+::-webkit-scrollbar {
+  width: 13px;
+  height: 13px;
+  background: #0d1518;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  width: 14px;
+  height: 14px;
+  background: #273d4b;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #4a5962;
 }
