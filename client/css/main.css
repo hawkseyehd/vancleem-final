@@ -110,38 +110,35 @@ a {
 
 /* Modal Backdrop */
 
-.modal-backdrop {
+/* .modal-backdrop {
   background: rgba(15, 24, 28, 0.95);
   z-index: 1000;
-}
+} */
 
 /* Chat-bot Modal */
 
 .chatbot-modal {
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
   z-index: 1001;
-  background: #121c23;
-  border: 1px solid #273d4b;
-  border-radius: 5px;
   padding: 1.25rem 1.5rem;
-  width: 60vw;
+  width: 520px;
+  height: 450px;
+  right: 50px;
+  bottom: 40px;
 }
 
 .modal-close {
   position: absolute;
-  top: 14px;
-  right: 0;
+  top: 30px;
+  right: 10px;
   cursor: pointer;
 }
 
 .modal-close::before,
 .modal-close::after {
   content: "";
-  width: 24px;
+  width: 30px;
   height: 3px;
-  background-color: #759eb6;
+  background-color: #3E6176;
   display: block;
 }
 

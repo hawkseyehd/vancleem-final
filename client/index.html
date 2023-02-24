@@ -102,19 +102,36 @@
       <!-- Chatbot Pop-up Window -->
       <div class="chatbot-modal container d-flex flex-column align-items-center position-fixed d-none">
 
+
         <div id="app">
-          <div id="chat_container"></div>
+          <div class="modal-close"></div>
+          <div class="chatbot-avatar-container">
+            <div class="chatbot-avatar">
+              <img src="./assets/chatbot-avatar.png" alt="chatbot avatar" />
+            </div>
+            <div class="chatbot-text">
+              <h1>Nexus</h1>
+              <h2>AI Assistant</h2>
+            </div>
+          </div>
+          <div id="chat_container">
+            <div class="wrapper ai">
+              <div class="chat">
+                <div class="message" id="1">Welcome! I'm an AI-powered assistant designed to answer questions about analytics and data automation in a way that reflects Grant's expertise and approach. I'm here to provide you with quick and informative responses.
+                </div>
+              </div>
+            </div>
+          </div>
           <form>
             <textarea
               name="prompt"
               cols="1"
               rows="1"
-              placeholder="Ask Codex..."
+              placeholder="Ask Nexus..."
             ></textarea>
             <button type="submit"><img src="assets/send.svg" /></button>
           </form>
         </div>
-    
 
       </div>      
       <!-- Section 1 -->

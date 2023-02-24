@@ -39,6 +39,10 @@ function hideChatModal() {
   chatModalVisible = false;
 }
 
+modalClose.addEventListener('click', ()=> {
+  hideChatModal();
+})
+
 // Function to open Mobile Nav menu
 
 function mobileNavOpen() {

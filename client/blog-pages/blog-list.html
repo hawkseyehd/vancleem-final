@@ -28,7 +28,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
 
     <!-- CSS style Files -->
-
+    <link rel="stylesheet" href="./../css/bot-style.css">
     <link rel="stylesheet" href="../css/main.css" />
     <link rel="stylesheet" href="../css/blog-list.css" />
     <title>Vancleem</title>
@@ -112,29 +112,34 @@
       <!-- Chatbot Pop-up Window -->
       <div class="chatbot-modal container d-flex flex-column align-items-center position-fixed d-none">
 
-        <div class="section-4_chatbot" id="chat-bot-chat">
-          <div class="section-4_blur-circle"></div>
-          <div class="section-4_chatbot__head">
-            <div class="chatbot-image">
-              <div class="chatbot-online_status"></div>
+        <div id="app">
+          <div class="modal-close"></div>
+          <div class="chatbot-avatar-container">
+            <div class="chatbot-avatar">
+              <img src="../assets/chatbot-avatar.png" alt="chatbot avatar" />
             </div>
-            <div class="chatbot-texts">
-              <h1>Xenia</h1>
+            <div class="chatbot-text">
+              <h1>Nexus</h1>
               <h2>AI Assistant</h2>
             </div>
           </div>
-          <div class="chat-paragraphes">
-            <div class="prompt">
-              Welcome! I'm an AI-powered assistant designed to answer
-              questions about analytics and data automation in a way that
-              reflects Grant's expertise and approach. I'm here to provide
-              you with quick and informative responses.
+          <div id="chat_container">
+            <div class="wrapper ai">
+              <div class="chat">
+                <div class="message" id="1">Welcome! I'm an AI-powered assistant designed to answer questions about analytics and data automation in a way that reflects Grant's expertise and approach. I'm here to provide you with quick and informative responses.
+                </div>
+              </div>
             </div>
           </div>
-          <div class="chatbot-chatbox">
-            <textarea class="chat-textarea"></textarea>
-            <i class="fa-solid fa-paper-plane chat-submit"></i>
-          </div>
+          <form>
+            <textarea
+              name="prompt"
+              cols="1"
+              rows="1"
+              placeholder="Ask Nexus..."
+            ></textarea>
+            <button type="submit"><img src="../assets/send.svg" /></button>
+          </form>
         </div>
 
       </div>
@@ -453,5 +458,6 @@
     </footer>
   </body>
   <script src="../scripts/script.js"></script>
+  <script src="../script.js"></script>
   <script src="../scripts/blog-list.js"></script>
 </html>
