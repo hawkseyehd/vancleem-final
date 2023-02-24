@@ -110,10 +110,15 @@ a {
 
 /* Modal Backdrop */
 
-/* .modal-backdrop {
+.modal-backdrop {
   background: rgba(15, 24, 28, 0.95);
   z-index: 1000;
-} */
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+}
 
 /* Chat-bot Modal */
 
@@ -166,6 +171,48 @@ a {
   letter-spacing: 0.1em;
   color: #0c0c0f;
   margin-top: 0.875rem;
+}
+
+
+.terms-modal {
+  width: 802px;
+  height: 509px;
+  background: #121C23;
+  border: 1px solid #273D4B;
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px;
+  z-index: 1000;
+
+}
+
+.terms-modal_heading {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 24px;
+  color: #FAFCFD;
+  margin-bottom: 23px;
+
+}
+
+.terms-modal_body {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  overflow-y: scroll;
+  color: #FAFCFD;
+  max-height: 401px;
+}
+.terms-modal_body p {
+  margin-block: 1rem;
+}
+
+.terms-modal_close {
+  right: 30px;
+  top: 30px;
 }
 
 /* Chatbot floating button */
@@ -966,8 +1013,8 @@ a {
 .social-links svg {
   object-fit: contain;
 }
+/* *********************** Media Queries start here ************************* */
 
-/* max width 600 media query */
 
 @media screen and (max-width: 850px) {
   body {
@@ -975,20 +1022,18 @@ a {
   }
 }
 
-/* max width 87.5rem media query */
 @media screen and (max-width: 1400px) {
   .tools {
     max-width: 58.75rem;
   }
 }
 
-/* max width 75rem media query */
 @media screen and (max-width: 1200px) {
   .logo {
     letter-spacing: 0.1em;
   }
 }
-/* max width 62rem media query */
+
 @media screen and (max-width: 992px) {
   .logo {
     font-size: 16px;
@@ -1013,6 +1058,14 @@ a {
 
   .tools {
     max-width: 43.75rem;
+  }
+
+  .section-use-cases,
+  .section-solutions > .container,
+  .section-use-cases__cards,
+  .section-skills > .container {
+    padding-bottom: 0;
+    margin-bottom: 0;
   }
 
   .section-use-cases__heading2 {
@@ -1088,9 +1141,24 @@ a {
   .tools {
     max-width: 32.5rem;
   }
+
+  .chatbot {
+    top: 86%;
+    left: 72%;
+    width: 109px;
+    height: 109px;
+    border-radius: 50%;
+  }
+
+  .chatbot-texts {
+    display: none;
+  }
+
+  .chatbot-cut_icon i {
+    top: -40px;
+  }
 }
 
-/* max width 35.625rem media query */
 @media screen and (max-width: 570px) {
   .container {
     padding-inline: 1.75rem !important;

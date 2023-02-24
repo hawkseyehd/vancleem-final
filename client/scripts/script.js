@@ -7,6 +7,10 @@ const contactForm = document.querySelector(".contact-form");
 const contactFormSubmitText = document.querySelector(
   ".contact-form__submit-text"
 );
+// Terms and confidentiality selectors
+const termsLink = document.querySelector('.terms-link');
+const termsModal = document.querySelector('.terms-modal');
+const termsModalClose = document.querySelector('.terms-modal_close');
 // Chatbot Selectors
 const modalClose = document.querySelector(".modal-close");
 const chatBotModal = document.querySelector(".chatbot-modal");
@@ -23,24 +27,40 @@ let xeniaBotStrictClose = false;
 copyRightSpan.textContent = currentYear;
 let showMenu = false;
 let chatModalVisible = false;
+let termsModalVisible = false;
 
 function showChatModal() {
   chatBotModal.classList.remove("d-none");
-  modalBackdrop.classList.remove("d-none");
   xeniaBotBtn.classList.add("d-none");
   xeniaBotHidden = true;
   chatModalVisible = true;
 }
 function hideChatModal() {
   chatBotModal.classList.add("d-none");
-  modalBackdrop.classList.add("d-none");
   xeniaBotBtn.classList.remove("d-none");
   xeniaBotHidden = false;
   chatModalVisible = false;
 }
 
+function showTermsModal() {
+  termsModal.classList.remove('d-none');
+  modalBackdrop.classList.remove("d-none");
+  termsModalVisible = true;
+}
+
+function hideTermsModal(){
+  termsModal.classList.add('d-none');
+  modalBackdrop.classList.add("d-none");
+  termsModalVisible = false;
+}
+
 modalClose.addEventListener('click', ()=> {
   hideChatModal();
+})
+
+modalBackdrop.addEventListener('click', ()=>{
+  hideTermsModal();
+  console.log('clicked')
 })
 
 // Function to open Mobile Nav menu
@@ -102,43 +122,12 @@ xeniaBotBtn.addEventListener("click", () => {
   }
 });
 
-// $.fn.isInViewport = function () {
-//   var elementTop = $(this).offset().top;
-//   var elementBottom = elementTop + $(this).outerHeight();
+termsLink.addEventListener('click', (e)=>{
+  e.preventDefault();
+  showTermsModal();
+})
 
-//   var viewportTop = $(window).scrollTop();
-//   var viewportBottom = viewportTop + $(window).height();
+termsModalClose.addEventListener('click' , ()=>{
+  hideTermsModal();
+})
 
-//   return elementBottom > viewportTop && elementTop < viewportBottom;
-// };
-
-// $(window).on("resize scroll", function () {
-//   if (!xeniaBotStrictClose) {
-//     if ($("#chat-bot-chat").isInViewport()) {
-//       $(".chatbot").addClass("chatbot_js2");
-//     } else {
-//       $(".chatbot").removeClass("chatbot_js2");
-//     }
-//   }
-// });
-
-// $(window).on("load", function () {
-//   if ($("#chat-bot-chat").isInViewport()) {
-//     $(".chatbot").addClass("chatbot_js");
-//     xeniaBotHidden = true;
-//   }
-// });
-
-// $(".chat-submit").on("click", function () {
-//   if (chatTextArea.value !== "" && chatTextArea.value !== null) {
-//     console.log(chatTextArea.value);
-
-//     chatBoxHtml +=
-//       `<div class="chat-paragraph">
-//       <p>` +
-//       chatTextArea.value +
-//       `</p>
-//     </div>`;
-//     $(".chat-paragraphes").html(chatBoxHtml);
-//   }
-// });
