@@ -92,17 +92,17 @@ menuBtn.addEventListener("click", () => {
 
 // Show Success text when message submitted (contact-form)
 
-let messageSent = false;
+let successMessageVisible = false;
 
 contactForm.addEventListener("submit", (e) => {
   e.preventDefault();
-  messageSent = true;
-  if (messageSent) {
+  successMessageVisible = true;
+  if (successMessageVisible) {
     contactFormSubmitText.classList.remove("d-none");
   }
 
   setTimeout(() => {
-    messageSent = false;
+    successMessageVisible = false;
     contactFormSubmitText.classList.add("d-none");
   }, 1000);
 });

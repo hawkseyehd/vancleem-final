@@ -251,8 +251,8 @@ a {
 
 .chatbot-online_status {
   position: relative;
-  left: 53px;
-  top: 62px;
+  right: -60px;
+  bottom: 20px;
   width: 12px;
   height: 12px;
   background: #75b678;
