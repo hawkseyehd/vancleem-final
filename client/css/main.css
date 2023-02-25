@@ -125,8 +125,8 @@ a {
 .chatbot-modal {
   z-index: 1001;
   padding: 1.25rem 1.5rem;
-  width: 520px;
-  height: 450px;
+  width: 517px;
+  height: 442px;
   right: 50px;
   bottom: 40px;
 }
@@ -175,7 +175,8 @@ a {
 
 
 .terms-modal {
-  width: 802px;
+  max-width: 802px;
+  width: 80vw;
   height: 509px;
   background: #121C23;
   border: 1px solid #273D4B;
@@ -240,12 +241,10 @@ a {
 }
 
 .chatbot-image {
-  background: url("../images/chatbot_image.webp") center/cover no-repeat
-    border-box;
   width: 77px;
   height: 77px;
   border: 1px solid #8baec2;
-  border-radius: 75px;
+  border-radius: 50%;
   margin: 0;
   margin-left: 13px;
 }
@@ -1142,6 +1141,13 @@ a {
     max-width: 32.5rem;
   }
 
+  .chatbot-modal {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+  }
+
   .chatbot {
     top: 86%;
     left: 72%;
@@ -1157,12 +1163,14 @@ a {
   .chatbot-cut_icon i {
     top: -40px;
   }
+
 }
 
 @media screen and (max-width: 570px) {
   .container {
     padding-inline: 1.75rem !important;
   }
+
   .copy-right-text {
     font-size: 16px;
   }
@@ -1199,5 +1207,8 @@ a {
 
   .section-contact__left__contact-title {
     font-size: 16px;
+  }
+  .terms-modal_heading {
+    font-size: 20px;
   }
 }
