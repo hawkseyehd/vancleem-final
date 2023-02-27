@@ -112,7 +112,7 @@ body {
   font-family: "Manrope";
   font-style: normal;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 16px;
   color: #000000;
   flex: 1;
@@ -141,7 +141,7 @@ body {
   width: 100%;
 
   color: #fff;
-  font-size: 18px;
+  font-size: 14px;
 
   padding: 10px;
   background: transparent;
@@ -149,6 +149,10 @@ body {
   border: none;
   outline: none;
   resize: none;
+}
+
+#app textarea::placeholder {
+  color: #3E6176;
 }
 
 textarea::-webkit-scrollbar {

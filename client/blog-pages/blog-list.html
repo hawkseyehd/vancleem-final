@@ -36,7 +36,7 @@
   <body>
     <header class="main-header">
       <div class="container d-flex align-items-center justify-content-between">
-        <a href="../index.html#home">
+        <a href="../index.html">
           <div class="logo text-uppercase">
             <span>GRANT</span> VAN CLEEMPUT
           </div></a
@@ -111,39 +111,39 @@
         </div>
       </div>
       <!-- Chatbot Pop-up Window -->
-      <div class="chatbot-modal d-flex flex-column align-items-center position-fixed d-none">
+        <div class="chatbot-modal d-flex flex-column align-items-center position-fixed d-none">
 
-        <div id="app">
-          <div class="modal-close"></div>
-          <div class="chatbot-avatar-container">
-            <div class="chatbot-avatar">
-              <img src="../assets/chatbot-avatar.png" alt="chatbot avatar" />
+          <div id="app">
+            <div class="modal-close"></div>
+            <div class="chatbot-avatar-container">
+              <div class="chatbot-avatar">
+                <img src="../assets/chatbot-avatar.png" alt="chatbot avatar" />
+              </div>
+              <div class="chatbot-text">
+                <h1>Nexus</h1>
+                <h2>AI Assistant</h2>
+              </div>
             </div>
-            <div class="chatbot-text">
-              <h1>Nexus</h1>
-              <h2>AI Assistant</h2>
-            </div>
-          </div>
-          <div id="chat_container">
-            <div class="wrapper ai">
-              <div class="chat">
-                <div class="message" id="1">Welcome! I'm an AI-powered assistant designed to answer questions about analytics and data automation in a way that reflects Grant's expertise and approach. I'm here to provide you with quick and informative responses.
+            <div id="chat_container">
+              <div class="wrapper ai">
+                <div class="chat">
+                  <div class="message" id="1">Welcome! I'm an AI-powered assistant designed to answer questions about analytics and data automation in a way that reflects Grant's expertise and approach. I'm here to provide you with quick and informative responses.
+                  </div>
                 </div>
               </div>
             </div>
+            <form>
+              <textarea
+                name="prompt"
+                cols="1"
+                rows="1"
+                placeholder="Ask Nexus..."
+              ></textarea>
+              <button type="submit"><img src="../assets/send.svg" /></button>
+            </form>
           </div>
-          <form>
-            <textarea
-              name="prompt"
-              cols="1"
-              rows="1"
-              placeholder="Ask Nexus..."
-            ></textarea>
-            <button type="submit"><img src="../assets/send.svg" /></button>
-          </form>
+  
         </div>
-
-      </div>
 
       <!-- Hero Section -->
       <section id="section-2">
@@ -304,46 +304,6 @@
           </div>
         </div>
       </section>
-      <!-- <section id="section-4">
-        <div class="container">
-          <div class="section-4_parent">
-            <div class="section-4_texts">
-              <div class="main-header_logo">
-                <h1>
-                  <span class="logo-edited logo-edited_special">GRANT</span
-                  ><span class="logo-edited"> VAN</span> CLEEMPUT
-                </h1>
-              </div>
-              <div class="section-4_texts__details">
-                <h2>Analytics & Data Automation Consultant</h2>
-                <p class="section-4_text_description">
-                  Thank you for visiting my website. If you have any questions
-                  or would like to discuss your data-related needs, please don't
-                  hesitate to get in touch. I would be happy to discuss your
-                  specific requirements in more detail. I look forward to
-                  hearing from you and helping you unlock the full potential of
-                  your data.
-                </p>
-              </div>
-              <div class="section-4_texts__contact___details">
-                <p>
-                  <span class="section-4_texts__span___1">Mobile:</span
-                  >514-978-9422
-                </p>
-                <p>
-                  <span class="section-4_texts__span___2">Location:</span
-                  >Montreal, Canada
-                </p>
-                <p>
-                  <span class="section-4_texts__span___3">Email:</span
-                  >grant@vancleem.com
-                </p>
-                <p>
-                  <span class="section-4_texts__span___4">LinkedIn:</span
-                  >linkedin.com/in/vancleem
-                </p>
-              </div>
-            </div> -->
             <section class="section-contact" id="contact">
               <div class="section-contact__backdrop"></div>
               <div
@@ -421,6 +381,7 @@
               </div>
             </section>
                  <!-- Terms and confidentiality Modal -->
+                 <div class="modal-backdrop d-none"></div>
       <div class="terms-modal container d-none">
         <div class="terms-modal_close modal-close"></div>
         <h1 class="terms-modal_heading">Terms & Confidentiality</h1>
@@ -450,4 +411,5 @@
   </body>
   <script src="../scripts/script.js"></script>
   <script type="module" src="../script.js" defer></script>
+  <script src="../scripts/blog-list.js"></script>
 </html>
