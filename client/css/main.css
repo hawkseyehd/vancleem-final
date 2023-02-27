@@ -650,7 +650,6 @@ a {
 
 .section-skills__backdrop {
   position: absolute;
-  background-image: url("../images/Rectangle\ 90.png");
   background-size: cover;
   background-repeat: no-repeat;
   z-index: -1;
@@ -718,7 +717,6 @@ a {
 
 .section-use-cases {
   padding: 4.625rem 0;
-  background: url("../images/Rectangle\ 98.png");
   position: relative;
 }
 
